@@ -33,6 +33,14 @@ Whichever has the largest adjusted r square is the best model. The adjusted R sq
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R square for this model, LENGTH~HEADLEN, is 0.84.
 
 
 
