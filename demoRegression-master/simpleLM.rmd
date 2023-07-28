@@ -60,7 +60,14 @@ summary.lm(simp)
 
 The adjusted R square for this model, LENGTH~WEIGHT, is 0.74.
 
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
+The adjusted R square for this model, LENGTH~HEADWTH, is 0.53.
 
 
 
