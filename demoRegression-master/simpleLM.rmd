@@ -42,6 +42,14 @@ summary.lm(simp)
 
 The adjusted R square for this model, LENGTH~HEADLEN, is 0.84.
 
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R square for this model, LENGTH~CHEST, is 0.79.
 
 
 
